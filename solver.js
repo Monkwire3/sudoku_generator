@@ -18,7 +18,15 @@ class Solver {
     }
 
     solve() {
-        console.log('attempting to solve: ', this.grid)
+        console.log('attempting to solve: ', this.grid);
     }
 }
 
+class Rule {
+    constructor(title, level) {
+        this.title = title;
+        this.level = level;
+        this.conditions = [];
+    }
+
+}
