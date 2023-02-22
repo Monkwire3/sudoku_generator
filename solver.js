@@ -26,7 +26,28 @@ class Rule {
     constructor(title, level) {
         this.title = title;
         this.level = level;
-        this.conditions = [];
+        this.check = () => console.log('check function not implemented for ', this.title);
+        this.addPencil = () => console.log('add pencil function not inmplemented for ', this.title);
     }
 
+    set check(func) {
+        this.check = func;
+    }
+
+    set addPencil(func) {
+        this.addPencil = func;
+    }
+
+    get check() {
+        return this.check;
+    }
+    
+    get addPencil() {
+        return this.addPencil;
+    }
 }
+
+
+
+
+
