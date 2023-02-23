@@ -4,11 +4,11 @@ class Rule {
         this.level = level;
     }
 
-    check() {
+    check(grid) {
         console.log('check function not implemented for ', this.title); 
     }
 
-    addPencil() {
+    addPencil(grid) {
         console.log('add pencil function not inmplemented for ', this.title);
     }
 }
