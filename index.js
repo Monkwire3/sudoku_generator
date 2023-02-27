@@ -16,3 +16,4 @@ if (window.screen.width < 500) {
 
 
 const board = new CanvasBoard()
+
